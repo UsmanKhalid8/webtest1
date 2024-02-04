@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  # Node.js application service
+  node_app:
+    image: node:16.16.0
+    container_name: fronted_con
+    build: ./datacenter
+    ports:
+      - "3000:3000"
+
+
+  # MongoDB service (optional, remove if not needed)
+ 
